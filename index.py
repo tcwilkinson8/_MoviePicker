@@ -1,5 +1,5 @@
 action = input("Do you like action movies? (yes/no): ").strip().lower() == "yes"
-comedy = input("Do you like comedy movies? (yes/no): ").strip().lower == "yes"
+comedy = input("Do you like comedy movies? (yes/no): ").strip().lower() == "yes"
 drama = input("Do you like drama movies? (yes/no): ").strip().lower() == "yes"
 
 if action and comedy and not drama:
@@ -33,4 +33,5 @@ elif genre == "Action-Drama":
     print("You may like these action-drama movies: Gladiator, The Dark Knight")
 elif genre == "Comedy-Drama":
     print("You may like these comedy-drama movies: The Grand Budapest Hotel, Little Miss Sunshine")
-os.execl(sys.executable, sys.executable, *sys.argv)
+elif genre == "Action-Comedy-Drama":
+    print("You may like these action-comedy-drama movies: The Avengers, Pirates of the Caribbean")
